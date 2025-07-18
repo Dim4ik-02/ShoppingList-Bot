@@ -4,6 +4,7 @@ from telebot import types
 import json
 import os
 
+API_TOKEN = os.environ.get("API_TOKEN")
 bot = telebot.TeleBot(API_TOKEN)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 FILE_NAME = os.path.join(BASE_DIR, 'shoppingList.json')
